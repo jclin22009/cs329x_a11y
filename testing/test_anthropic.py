@@ -1,8 +1,11 @@
 # from anthropic computer use quickstart docs https://docs.claude.com/en/docs/agents-and-tools/tool-use/computer-use-tool
 
 import anthropic
-
+import os
+from dotenv import load_dotenv
 client = anthropic.Anthropic()
+
+load_dotenv()
 
 response = client.beta.messages.create(
     model="claude-sonnet-4-5",  # or another compatible model
@@ -25,6 +28,7 @@ response = client.beta.messages.create(
         }
     ],
     messages=[{"role": "user", "content": "Save a picture of a cat to my desktop."}],
-    betas=["computer-use-2025-01-24"]
+    betas=["computer-use-2025-01-24"],
+    api_key=os.getenv("ANTHROPIC_API_KEY")
 )
 print(response)

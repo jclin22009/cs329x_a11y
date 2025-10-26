@@ -9,4 +9,5 @@ dependencies = [
     "google-genai>=1.46.0",
     "openai>=2.6.1",
     "playwright>=1.55.0",
+    "python-dotenv>=1.2.1",
 ]
