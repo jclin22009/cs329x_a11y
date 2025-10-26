@@ -4,6 +4,7 @@
 ## To start ⛷️
 1. `uv sync`
 2. `source .venv/bin/activate`
+3. copy `.env.example` into a new file `.env.local`. Fill in the variables (ask Jason for them)
 
 ## Relevant docs
 - OpenAI operator: https://platform.openai.com/docs/guides/tools-computer-use
