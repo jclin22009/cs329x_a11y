@@ -19,8 +19,8 @@ response = client.beta.messages.create(
           "display_number": 1,
         },
         {
-          "type": "text_editor_20250124",
-          "name": "str_replace_editor"
+          "type": "text_editor_20250728",
+          "name": "str_replace_based_edit_tool"
         },
         {
           "type": "bash_20250124",
